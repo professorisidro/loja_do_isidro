@@ -27,6 +27,7 @@ class Produtos extends React.Component {
                                         <h5 className="card-title">{produto.nome}</h5>
                                         <p className="card-text">{produto.descricao} <br/>
                                            R$ {produto.preco} </p>
+                                           <p>Categoria: {produto.categoria.descricao} </p>
                                         <NavLink to={'/produtos/' + produto.codigo} className="btn btn-primary">Detalhes</NavLink>
                                     </div>
                                 </div>

@@ -26,7 +26,8 @@ class Detalhe extends React.Component {
                         <h3>{produto.nome}</h3>
                         <p>{produto.descricao}</p>
                         <p><strong>Preço R$ {produto.preco}</strong></p>
-                        <Disponivel qtde={produto.qtde_estoque} />
+                        <Disponivel qtde={produto.qtd_estoque} />
+                        <p>Categoria: {produto.categoria.descricao} </p>
                         <NavLink to="/produtos" className="btn btn-primary">Voltar</NavLink>
                     </div>
                 </div>
